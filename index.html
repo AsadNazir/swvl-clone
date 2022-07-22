@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="h-[1000vh]">
+    <!-- main banner with navbar and video in background -->
+    <main class="relative max-h-[90vh]">
+      <nav
+        class="bg-black tablet:w-fit left-1/2 -translate-x-1/2 mx-auto text-white flex z-10 mt-10 tablet:mt-14 bg-transparent absolute w-[90%] top-0 text-lg xl:text-xl tablet:text-base font-bold justify-between tablet:justify-center"
+      >
+        <!-- Navbar inside the main section  -->
+        <!-- Left side of navbar -->
+        <div id="leftNav" class="w-[15%] tablet:mr-10 min-w-[6rem] max-w-[10rem]">
+          <a class="w-full" href="#"
+            ><img
+              src="./images_videos/Header_logo.svg"
+              alt=""
+              class=""
+          /></a>
+        </div>
+        <!-- Right Side Of NavBar -->
+        <ul id="rightNav" class="MenuClose tablet:flex transition-all duration-300 uppercase p-4 tablet:p-0">
+          <li class="last:mr-0 tablet:mr-6 flex tablet:text-left tablet:w-fit items-center w-full">
+            <a class="hover:border-red-600 border-t-4 border-transparent py-2 tablet:py-0" href="">Home</a>
+          </li>
+          <li class="last:mr-0 tablet:mr-6 flex tablet:text-left  items-center w-full tablet:w-auto">
+            <a  class="hover:border-red-600 border-t-4 border-transparent py-2 tablet:py-0" href="">Daily</a>
+          </li>
+          <li class="last:mr-0 tablet:mr-6 flex tablet:text-left w-full tablet:w-auto items-center tablet:">
+            <a  class="hover:border-red-600 border-t-4 border-transparent py-2 tablet:py-0" href="">Travel</a>
+          </li>
+          <li id="private_bus" class="tablet:relative last:mr-0 tablet:mr-6 flex items-center tablet: text-left tablet:text-left w-full flex-col tablet:flex-row">
+            <span  class="w-full hover:border-red-600 border-t-4 border-transparent hover:cursor-pointer tablet:w-fit py-2 tablet:py-0">Private Bus</span>
+            <div id="private_bus_menu" class="w-full tablet:absolute flex-col top-14 hidden">
+              <a href="#" class="bg-red-400 hover:bg-red-500 p-2" rel="noopener noreferrer">Egypt</a>
+              <a href="#" class="bg-red-400 hover:bg-red-500 p-2" rel="noopener noreferrer">Pakistan</a>
+            </div>
+          </li>
+          <li id="business" class="relative text-left last:mr-0 tablet:mr-6 flex items-start tablet:justify-center justify-start w-full tablet:w-auto talet:flex-row flex-col">
+            <span class="hover:border-red-600 border-t-4 border-transparent cursor-pointer py-2 tablet:py-0">Bussines</span>
+            <div id="business_menu" class="w-full tablet:absolute flex-col top-14 hidden py-2 tablet:py-0">
+              <a href="#" class="bg-red-400 hover:bg-red-500 p-2 py-2 tablet:py-0" rel="noopener noreferrer">blog</a>
+            </div>
+          </li>
+          <li class="last:mr-0 tablet:mr-6 flex text-left w-full tablet:w-auto items-center ">
+            <a class="hover:border-red-600 border-t-4 border-transparent py-2 tablet:py-0" href="">Captian</a>
+          </li>
+          <li class="last:mr-0 tablet:mr-6 flex text-left w-full tablet:w-auto items-center ">
+            <a class="hover:border-red-600 border-t-4 border-transparent py-2 tablet:py-0" href="">Investor</a>
+          </li>
+          <li class="last:mr-0 tablet:mr-6 flex text-left w-full tablet:w-auto items-center ">
+            <a href="" class="hover:border-red-600 border-t-4 border-transparent py-2 tablet:py-0">People</a>
+          </li>
+          <li class="last:mr-0 tablet:mr-6 flex text-left w-full tablet:w-auto items-center ">
+            <a class="hover:border-red-600 border-t-4 border-transparent py-2 tablet:py-0" href="">App</a>
+          </li>
+          <li class="last:mr-0 tablet:mr-6 flex text-left w-full tablet:w-auto items-center ">
+            <a class="hover:border-red-600 border-t-4 border-transparent py-2 tablet:py-0" href="">ENG</a>
+          </li>
+        </ul>
+        <!-- Burger Menu Icon  -->
+        <div
+          id="HamMenu"
+          class="btn tablet:hidden flex justify-center items-center cursor-pointer"
+        >
+          Menu
+        </div>
+      </nav>
+      <div
+        class="relative w-full min-h-[400px] h-[50vh] tablet:h-[100vh] overflow-hidden flex justify-center items-center"
+      >
+        <video
+          loop
+          autoplay
+          muted
+          class="absolute w-full h-full object-cover top-0 left-0"
+          poster="./images_videos/slider-1.webp"
+        >
+          <source src="./images_videos/SWVL - Amended Graded.mp4" />
+        </video>
+        <!-- Download over here -->
+        <button
+          class="absolute tablet:text-xl tablet:px-5 tablet:py-4 z-0 btn bottom-10 tablet:bottom-20"
+        >
+          Download
+        </button>
+      </div>
+    </main>
+    <!-- After Banner Flying bus/car section -->
+    <div id="FlyingCar" class="flex md:flex-row flex-col mt-20 lg:mt-40 w-[80vw] mx-auto">
+      <div id="flyingCarLeft" class="md:w-[40%] " >
+        <h1 class="text-4xl lg:leading-[5rem] md:text-4xl lg:text-6xl font-bold ">swvl/swv(ə)l/ <br>
+          noun, verb,<br>
+          adjective 
+          <a href="https://f.hubspotusercontent20.net/hubfs/9490826/Swvl_July2021/Video/swivel_en_gb_1.mp3" target="_blank">🔉</a></h1>
+          <div class=" hidden lg:block lg:h-4 my-10 w-[60%] bg-red-600"></div>
+        <p class="text-lg lg:text-2xl my-10 lg:my-0">A tech-driven, affordable, and convenient transportation service, committed to enabling cities, people and businesses to move everywhere.</p>
+      </div>
+      <div class="md:w-[60%] flex items-center justify-center md:ml-7">
+        <img class="w-[100%]  h-full min-w-[29rem] " src="./images_videos/umbrellaCar.svg" alt="">
+      </div>
+    </div>
+  </body>
+  <script src="./index.js" type="module"></script>
+</html>

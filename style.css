@@ -1,0 +1,21 @@
+@tailwind base;
+
+.btn
+{
+   @apply text-lg text-white bg-red-600 px-3 py-2 font-semibold
+}
+
+.MenuOpen
+{
+    @apply flex flex-col absolute left-1/2 -translate-x-1/2 items-center bg-red-600 w-full top-14 z-10
+}
+.MenuClose
+{
+    @apply hidden
+}
+*
+{
+    box-sizing: border-box
+}
+@tailwind components;
+@tailwind utilities;
