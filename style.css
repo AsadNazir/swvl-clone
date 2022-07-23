@@ -2,7 +2,7 @@
 
 .btn
 {
-   @apply text-lg text-white bg-red-600 px-3 py-2 font-semibold
+   @apply text-lg text-white bg-red-600 px-4 py-3 font-semibold
 }
 
 .MenuOpen
@@ -13,9 +13,11 @@
 {
     @apply hidden
 }
-*
-{
-    box-sizing: border-box
+*{
+    box-sizing: border-box;
+  
 }
+
+
 @tailwind components;
 @tailwind utilities;

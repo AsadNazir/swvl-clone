@@ -30,15 +30,33 @@ function MenuBtn() {
     if (!isMenuOpen) {
       menu.classList.remove("MenuClose");
       menu.classList.add("MenuOpen");
-      isMenuOpen=true;
-    }
-    else{
-        menu.classList.remove("MenuOpen");
-        menu.classList.add("MenuClose");
-        isMenuOpen=false;
+      isMenuOpen = true;
+    } else {
+      menu.classList.remove("MenuOpen");
+      menu.classList.add("MenuClose");
+      isMenuOpen = false;
     }
   });
 }
+function sliderCode() {
+  const slider = document.querySelector(".slider");
+  const dots = document.querySelectorAll(".dots >li");
+  //First Dot COloured
+  dots[0].style.backgroundColor = "white";
 
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].addEventListener("click", () => {
+      slider.style.left = `-${100 * i}%`;
+      dots[i].style.backgroundColor = "white";
+
+      for (let j = 0; j < dots.length; j++) {
+        if (i === j) continue;
+        dots[j].style.backgroundColor = "transparent";
+      }
+    });
+  }
+}
+
+sliderCode();
 hoverOnNavBar();
 MenuBtn();

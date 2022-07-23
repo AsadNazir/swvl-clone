@@ -29,6 +29,9 @@ module.exports = {
       gradientColorStops: {
         transBlack: "rgba(0, 0, 0, 0.397)",
       },
+      borderWidth: {
+        "thick-border": "2rem",
+      },
     },
   },
   plugins: [],
