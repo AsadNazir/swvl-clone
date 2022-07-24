@@ -1,0 +1,4 @@
+  encryption: *.surge.sh, surge.sh (297 days)
+             IP: 138.197.235.123
+
+   Success! - Published to swvl-clone-made-by-me-22.surge.sh

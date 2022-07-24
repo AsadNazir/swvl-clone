@@ -55,6 +55,25 @@ function sliderCode() {
       }
     });
   }
+
+  // Auto Slide Slider
+  let slideCount = 0;
+  setInterval(() => {
+    if(slideCount>2)
+    {
+      slideCount=0;
+    }
+    slider.style.left = `-${100 * slideCount}%`;
+    
+    dots[slideCount].style.backgroundColor = "white";
+    
+    for (let j = 0; j < dots.length; j++) {
+      if (slideCount === j) continue;
+      dots[j].style.backgroundColor = "transparent";
+    }
+    
+    slideCount++;
+  }, 4000);
 }
 
 sliderCode();

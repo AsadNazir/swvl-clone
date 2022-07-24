@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <!-- Fonts Awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body class="">
@@ -95,7 +104,7 @@
             >
               <a
                 href="#"
-                class="bg-red-400 hover:bg-red-500 p-2 py-2 tablet:py-0"
+                class="bg-red-400 hover:bg-red-500 p-2"
                 rel="noopener noreferrer"
                 >blog</a
               >
@@ -150,9 +159,9 @@
         <!-- Burger Menu Icon  -->
         <div
           id="HamMenu"
-          class="btn tablet:hidden flex justify-center items-center cursor-pointer"
+          class="text-white text-xl bg-red-600 px-3 md:text-2xl py-2 rounded-lg tablet:hidden flex justify-center items-center cursor-pointer"
         >
-          Menu
+        <i class="fa-solid fa-bars"></i>
         </div>
       </nav>
       <div
@@ -283,10 +292,7 @@
 
       <!-- SLider -->
 
-      <div
-        id="sliderCont"
-        class="mt-10 relative w-full overflow-hidden"
-      >
+      <div id="sliderCont" class="mt-10 relative w-full overflow-hidden">
         <div
           class="relative transition-all duration-300 slider left-[0%] float-left flex snap-x snap-mandatory w-[300%] scroll-smooth"
         >
@@ -383,7 +389,7 @@
           </div>
         </div>
         <ul
-          class="flex absolute z-10 bottom-5 lg:bottom-24 left-[70%] lg:left-80 -translate-y-1/2 w-fit dots"
+          class="flex absolute z-10 bottom-5 lg:bottom-24 left-[70%] md:left-72 xl:left-80 -translate-y-1/2 w-fit dots"
         >
           <li
             class="last:mr-none mr-4 w-[1rem] h-[1rem] rounded-full border-white border-2 cursor-pointer"
@@ -399,45 +405,104 @@
     </div>
 
     <!-- Mobile Section -->
-    <div class=" grid grid-cols-1  my-20 lg:my-40 40 w-[90vw] lg:w-[80vw] mx-auto md:grid-cols-2 md:grid-rows-1">
-      <div class=" w-full lg:w-[80%] mx-auto">
-        <img src="./images_videos/live_tracking.webp" alt="">
+    <div
+      class="grid grid-cols-1 my-20 lg:my-40 40 w-[90vw] lg:w-[80vw] mx-auto md:grid-cols-2 md:grid-rows-1"
+    >
+      <div class="w-full lg:w-[80%] mx-auto">
+        <img src="./images_videos/live_tracking.webp" alt="" />
       </div>
       <div class="flex justify-center flex-col mt-8">
-        <h1 class=" w-fit relative text-3xl lg:leading-[5rem] md:text-4xl lg:text-6xl font-bold">What moves us?
+        <h1
+          class="w-fit relative text-3xl lg:leading-[5rem] md:text-4xl lg:text-6xl font-bold"
+        >
+          What moves us?
         </h1>
         <div class="mt-8 bg-red-600 h-3 w-[20%]"></div>
-        
-        <p    class="mt-10 text-xl lg:text-2xl xl:text-3xl lg:min-h-[8rem] w-[80%] min-w-[15rem]">Just like you, time, money and comfort are what we're all about, so you can always stay on the right track with a hassle-free commuting experience.</p>
-        <button
-          class="tablet:text-xl tablet:px-5 tablet:py-3 btn   mt-10 w-fit"
+
+        <p
+          class="mt-10 text-xl lg:text-2xl xl:text-3xl lg:min-h-[8rem] w-[80%] min-w-[15rem]"
         >
+          Just like you, time, money and comfort are what we're all about, so
+          you can always stay on the right track with a hassle-free commuting
+          experience.
+        </p>
+        <button class="tablet:text-xl tablet:px-5 tablet:py-3 btn mt-10 w-fit">
           Download
         </button>
       </div>
     </div>
+
     <!-- Footer section -->
-    <footer class="bg-red-600 py-10 ">
-      <div class="footer_Cont w-[90vw] lg:w-[80vw] mx-auto flex flex-col flex-wrap">
+    <footer class="bg-red-600 py-10 text-white">
+      <div
+        class="footer_Cont w-[90vw] lg:w-[80vw] mx-auto flex flex-wrap lg:justify-between"
+      >
         <!-- App Links -->
-        <div class="appLinks">
-          <h1 class="last:mb-0 mb-4 uppercase text-white text-2xl lg:leading-[5rem] md:text-4xl lg:text-6xl font-bold" >Download App</h1>
-          <div class="mb-4"><img src="./images_videos/apple-store.svg" alt=""></div>
-          <div class="mb-4"><img src="./images_videos/app-gallery.svg" alt=""></div>
-          <div class="mb-4"><img src="./images_videos/google-play.svg" alt=""></div>
+        <div class=" mt-4 appLinks min-w-[290px] lg:min-w-[250px] tablet:mr-3">
+          <h1
+            class="last:mb-0 mb-4 uppercase text-white text-2xl lg:leading-[5rem] lg:text-3xl font-bold"
+          >
+            Download App
+          </h1>
+          <div class="mb-4">
+            <img src="./images_videos/apple-store.svg" alt="" />
+          </div>
+          <div class="mb-4">
+            <img src="./images_videos/app-gallery.svg" alt="" />
+          </div>
+          <div class="mb-4">
+            <img src="./images_videos/google-play.svg" alt="" />
+          </div>
         </div>
         <!-- WHo We are Menu -->
-        <div class="mt-3 appLinks flex flex-col text-white">
-          <h1 class="text-white uppercase text-2xl lg:leading-[5rem] md:text-4xl lg:text-6xl font-bold">Who we Are</h1>
-          <a  class="mt-3 text-xl lg:text-2xl xl:text-3xl " href="">About us</a>
-          <a  class="mt-3 text-xl lg:text-2xl xl:text-3xl " href="">Our People</a>
-          <a  class="mt-3 text-xl lg:text-2xl xl:text-3xl " href="">Investors</a>
-          <a  class="mt-3 text-xl lg:text-2xl xl:text-3xl " href="">Swvl Captain</a>
+        <div class="mt-4 appLinks flex flex-col text-white min-w-[290px] lg:min-w-[200px] tablet:mr-3">
+          <h1
+            class="text-white uppercase text-2xl lg:leading-[5rem] lg:text-3xl font-bold"
+          >
+            Who we Are
+          </h1>
+          <a class="mt-3 text-xl lg:text-2xl" href="">About us</a>
+          <a class="mt-3 text-xl lg:text-2xl" href="">Our People</a>
+          <a class="mt-3 text-xl lg:text-2xl" href="">Investors</a>
+          <a class="mt-3 text-xl lg:text-2xl" href=""
+            >Swvl Captain</a
+          >
         </div>
-        <div class="mt-4 appLinks flex flex-col text-white">
-          <h1 class="text-white uppercase text-2xl lg:leading-[5rem] md:text-4xl lg:text-6xl font-bold">What we do</h1>
-          <a  class="mt-3 text-xl lg:text-2xl xl:text-3xl " href="">Swvl Daily</a>
-          <a  class="mt-3 text-xl lg:text-2xl xl:text-3xl " href="">Swvl Travel</a>
+        <!-- What do we do -->
+        <div class="mt-4 appLinks flex flex-col text-white min-w-[290px] lg:min-w-[200px] tablet:mr-3">
+          <h1
+            class="text-white uppercase text-2xl lg:leading-[5rem]  lg:text-3xl font-bold"
+          >
+            What we do
+          </h1>
+          <a class="mt-3 text-xl lg:text-2xl" href="">Swvl Daily</a>
+          <a class="mt-3 text-xl lg:text-2xl" href=""
+            >Swvl Travel</a
+          >
+        </div>
+        <!-- Social media -->
+        <div id="SocialMedia" class="text-3xl lg:text-4xl text-white mt-4 min-w-[290px] flex items-center">
+          <span class="last:mr-0 mr-3"
+            ><a href="#"><i class="fa-brands fa-facebook-square"></i></a
+          ></span>
+          <span class="last:mr-0 mr-3"
+            ><a href="#"> <i class="fa-brands fa-twitter"></i></a
+          ></span>
+          <span class="last:mr-0 mr-3"
+            ><a href="#"><i class="fa-brands fa-linkedin-in"></i></a
+          ></span>
+          <span class="last:mr-0 mr-3"
+            ><a href="#"><i class="fa-brands fa-instagram"></i></a
+          ></span>
+        </div>
+        <!-- Swvl logo -->
+        <div class="mt-8 min-w-[290px]">
+          <a href="#" ><img class="w-[35%]" src="./images_videos/Header_logo.svg" alt="" /> </a>
+        </div>
+        <!-- Privacy and Terms -->
+        <div class="font-semibold mt-4 flex justify-end min-w-[290px]">
+          <span class="mr-4"><a href="#">Privacy</a></span>
+          <span class="mr-4"><a href="#">Terms</a></span>
         </div>
       </div>
     </footer>
